@@ -1,188 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gide - Legacy | Trusted Stranger</title>
-  <meta name="description" content="Gide - Legacy is a thoughtful app in development for preserving memories, stories, values, and the pieces of life that matter most.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gide — Legacy | Your private family archive</title>
+  <meta name="description" content="Preserve your family's voices, photos, stories, and relationships in a private archive your family controls.">
   <link rel="icon" type="image/png" href="G-legacy.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header standard-header app-header legacy-header">
-    <div class="header-inner">
-      <a href="https://trustedstranger.app" class="brand">
-        <img src="G-legacy.png" alt="Gide - Legacy logo" class="brand-logo">
-        <div class="brand-text">
-          <span class="brand-name">Gide - Legacy</span>
-          <span class="brand-subtitle">by Trusted Stranger</span>
-        </div>
-      </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="https://trustedstranger.app/index.html#apps">Products</a></li>
-          <li><a href="https://trustedstranger.app/books/">AI Books</a></li>
-          <li><a href="https://trustedstranger.app/downloads.html">Downloads</a></li>
-          <li><a href="https://trustedstranger.app/resources/infographics/">Infographics</a></li>
-          <li><a href="https://trustedstranger.app/support.html">Support</a></li>
-        </ul>
-      </nav>
-      <a href="https://trustedstranger.app/index.html#apps" class="button primary header-button">Explore Gide</a>
-    </div>
+  <header class="site-header shell">
+    <a class="brand" href="/" aria-label="Gide Legacy home">
+      <img src="G-legacy.png" alt="" width="54" height="54">
+      <span>Gide <b>— Legacy</b></span>
+    </a>
+    <a class="header-link" href="#how-it-works">How it works</a>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">In development</p>
-        <h1>Preserve what matters before it fades.</h1>
-        <p class="lede">Gide - Legacy is being designed as a calm, guided space for capturing memories, stories, values, family history, and the everyday details that become meaningful over time.</p>
-        <div class="actions">
-          <a class="button primary" href="#purpose">See the idea</a>
-          <a class="button secondary" href="https://trustedstranger.app/index.html#apps">Explore Gide apps</a>
+        <p class="eyebrow">YOUR FAMILY'S PRIVATE ARCHIVE</p>
+        <h1>Every story belongs somewhere safe.</h1>
+        <p class="hero-lede">Gide — Legacy helps your family preserve voices, photos, stories, and relationships in a private archive your family controls.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=com.gidelegacy.app">Get Gide for Android</a>
+          <a class="button secondary" href="join/">I have an invite</a>
+        </div>
+        <p class="small-note">Joining an existing family is free. Only the organizer purchases the family license.</p>
+      </div>
+
+      <div class="archive-card" aria-label="Private family archive illustration">
+        <div class="archive-mark"><img src="G-legacy.png" alt="Gide Legacy" width="118" height="118"></div>
+        <p class="archive-label">A PRIVATE FAMILY ARCHIVE</p>
+        <div class="memory-stack">
+          <article><span class="memory-dot gold"></span><div><b>Grandma's kitchen table</b><small>Audio memory · 4 minutes</small></div></article>
+          <article><span class="memory-dot blue"></span><div><b>Our first family home</b><small>Story with 6 photos</small></div></article>
+          <article><span class="memory-dot cream"></span><div><b>Dad's Navy years</b><small>Timeline highlight</small></div></article>
+        </div>
+        <div class="privacy-pill">Private · Encrypted · Family controlled</div>
+      </div>
+    </section>
+
+    <section class="steps-section" id="how-it-works">
+      <div class="shell">
+        <p class="eyebrow centered">SIMPLE FROM THE FIRST TAP</p>
+        <h2>Join your family in three easy steps.</h2>
+        <div class="steps-grid">
+          <article class="step-card"><span>1</span><h3>Open your invitation</h3><p>Tap the private link sent by your family organizer.</p></article>
+          <article class="step-card"><span>2</span><h3>Install and sign in</h3><p>Download Gide and sign in with your own Google account.</p></article>
+          <article class="step-card"><span>3</span><h3>Join for free</h3><p>Your invitation connects you to the family. You will not be asked to buy another license.</p></article>
         </div>
       </div>
-      <div class="legacy-card" aria-label="Legacy memory card preview">
-        <img src="G-legacy.png" alt="" aria-hidden="true">
-        <p class="card-label">Legacy prompt</p>
-        <h2>What story do you want someone to remember?</h2>
-        <p>Start with one memory, one lesson, one voice note, or one small piece of family history.</p>
-      </div>
     </section>
 
-    <section class="section intro" id="purpose">
-      <p class="eyebrow">A quieter kind of technology</p>
-      <h2>Legacy is about attention.</h2>
-      <p>The goal is not to turn a person into content. The goal is to help people notice, gather, and preserve the parts of a life that are easy to postpone: stories, lessons, traditions, favorite sayings, hard-won wisdom, and the simple details loved ones may one day wish they had asked about.</p>
-    </section>
-
-    <section class="feature-grid" id="features" aria-label="Gide - Legacy planned features">
-      <article>
-        <span class="feature-number">01</span>
-        <h3>Guided memory prompts</h3>
-        <p>Gentle questions can help turn blank-page pressure into one manageable reflection at a time.</p>
-      </article>
-      <article>
-        <span class="feature-number">02</span>
-        <h3>Stories and values</h3>
-        <p>Capture not just what happened, but what it meant, what it taught, and what should be passed forward.</p>
-      </article>
-      <article>
-        <span class="feature-number">03</span>
-        <h3>Family history support</h3>
-        <p>Organize names, milestones, traditions, memories, and context that can be hard to reconstruct later.</p>
-      </article>
-      <article>
-        <span class="feature-number">04</span>
-        <h3>Built with restraint</h3>
-        <p>Legacy is being shaped carefully, with privacy, dignity, and emotional safety treated as core design requirements.</p>
-      </article>
-    </section>
-
-    <section class="section principle-section">
-      <div class="section-heading">
-        <p class="eyebrow">Design principles</p>
-        <h2>Human first. Private by default. Useful when it matters.</h2>
-      </div>
-      <div class="principles">
-        <article>
-          <h3>No pressure to perform</h3>
-          <p>Legacy should feel like a quiet conversation, not a social feed or productivity dashboard.</p>
-        </article>
-        <article>
-          <h3>Plain language</h3>
-          <p>The experience should be simple enough for families to use without needing technical confidence.</p>
-        </article>
-        <article>
-          <h3>Respectful boundaries</h3>
-          <p>Private memories deserve clear controls, careful defaults, and honest explanations.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="privacy-panel" id="privacy">
+    <section class="trust-section shell">
       <div>
-        <p class="eyebrow">Privacy-minded</p>
-        <h2>Personal stories deserve careful handling.</h2>
+        <p class="eyebrow">BUILT AROUND PRIVACY</p>
+        <h2>Your memories are not social-media content.</h2>
       </div>
-      <p>Gide - Legacy is still in development, so final privacy details will be published before release. The guiding principle is simple: memory, family, and personal-history tools should explain what they store, where it lives, and what the user controls.</p>
-    </section>
-
-    <section class="cta">
-      <img src="G-legacy.png" alt="" aria-hidden="true">
-      <h2>Gide - Legacy is taking shape.</h2>
-      <p>The app is not yet available on the App Store. This page will be updated as screenshots, final features, privacy details, and launch information are ready.</p>
-      <a class="button primary" href="https://trustedstranger.app/support.html">Contact support</a>
+      <ul class="trust-list">
+        <li><b>Your family owns the archive.</b><span>Stories and photos remain in your family's private vault.</span></li>
+        <li><b>Firebase cannot read your memories.</b><span>It coordinates membership and access, not family content.</span></li>
+        <li><b>You choose what to share.</b><span>Keep a memory private or share it with your family group.</span></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="https://trustedstranger.app" class="brand footer-logo">
-          <img src="G-legacy.png" alt="Gide logo" class="brand-logo">
-          <div class="brand-text">
-            <span class="brand-name">Gide</span>
-            <span class="brand-subtitle">by Trusted Stranger</span>
-          </div>
-        </a>
-        <p>Practical apps and plain-English resources for safety, clarity, calm, faith, movement, and memory.</p>
-      </div>
-      <div class="footer-column">
-        <h3>Products</h3>
-        <ul>
-          <li><a href="https://guard.trustedstranger.app/">Gide Guard</a></li>
-          <li><a href="https://calm.trustedstranger.app/">Gide Calm</a></li>
-          <li><a href="https://faith.trustedstranger.app/">Gide Faith</a></li>
-          <li><a href="https://stride.trustedstranger.app/">Gide Stride</a></li>
-          <li><a href="https://legacy.trustedstranger.app/">Gide Legacy</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>AI Books</h3>
-        <ul>
-          <li><a href="https://trustedstranger.app/books/ai-wont-replace-you/">AI Won't Replace You</a></li>
-          <li><a href="https://trustedstranger.app/books/ai-for-everyday-life/">AI for Everyday Life</a></li>
-          <li><a href="https://trustedstranger.app/books/ai-gold-rush/">The AI Gold Rush</a></li>
-          <li><a href="https://trustedstranger.app/books/">All Books &amp; Guides</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="https://trustedstranger.app/resources/ai-wayfinder/">AI Wayfinder</a></li>
-          <li><a href="https://trustedstranger.app/resources/ai-mastery-safety-guide/">AI Mastery &amp; Safety Guide</a></li>
-          <li><a href="https://trustedstranger.app/resources/infographics/">Infographics</a></li>
-          <li><a href="https://trustedstranger.app/downloads.html">Downloads</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="https://trustedstranger.app/about.html">About Gide</a></li>
-          <li><a href="https://trustedstranger.app/blog.html">Blog</a></li>
-          <li><a href="https://trustedstranger.app/support.html">Support</a></li>
-          <li><a href="https://trustedstranger.app/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="year">2026</span> Gide. All rights reserved.</p>
-      <div class="footer-legal">
-        <a href="https://trustedstranger.app/privacy.html">Privacy Policy</a>
-        <a href="https://trustedstranger.app/terms.html">Terms of Use</a>
-        <a href="https://trustedstranger.app/disclaimer.html">Disclaimer</a>
-      </div>
-      <p>Gide and its related applications are owned and operated by Trusted Stranger.</p>
+  <footer>
+    <div class="shell footer-inner">
+      <span>Gide — Legacy</span>
+      <span>Preserve the people and stories that made you.</span>
+      <nav aria-label="Footer"><a href="https://trustedstranger.app/privacy.html">Privacy</a><a href="https://trustedstranger.app/support.html">Support</a></nav>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
