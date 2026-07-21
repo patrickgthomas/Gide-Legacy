@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family invitation | Gide — Legacy</title>
+  <meta name="description" content="Join your private family archive on Gide — Legacy.">
+  <link rel="icon" type="image/png" href="../G-legacy.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="join.js" defer></script>
+</head>
+<body class="join-page">
+  <header class="site-header shell">
+    <a class="brand" href="../" aria-label="Gide Legacy home">
+      <img src="../G-legacy.png" alt="" width="54" height="54">
+      <span>Gide <b>— Legacy</b></span>
+    </a>
+    <span class="secure-label">Private family invitation</span>
+  </header>
+
+  <main class="join-shell">
+    <section class="invite-card">
+      <div class="invite-icon"><img src="../G-legacy.png" alt="" width="84" height="84"></div>
+      <p class="eyebrow centered">YOU'VE BEEN INVITED</p>
+      <h1>Join your family's private archive.</h1>
+      <p class="invite-lede">Your family has already created and paid for this group. Joining is free.</p>
+
+      <div class="code-box" aria-live="polite">
+        <span>Your invitation code</span>
+        <strong id="invite-code">Reading invitation…</strong>
+        <button id="copy-code" type="button" hidden>Copy code</button>
+      </div>
+
+      <p id="key-confirmation" class="key-confirmation" hidden>✓ Your private family encryption key is included securely in this invitation.</p>
+      <div id="missing-code" class="missing-code" hidden>
+        <b>This link does not contain an invitation code.</b>
+        <span>Ask your family organizer to send a new, complete invitation link.</span>
+      </div>
+
+      <a class="button primary full" href="https://play.google.com/store/apps/details?id=com.gidelegacy.app">Get or open Gide on Google Play</a>
+
+      <div class="installed-help">
+        <h2>Already have Gide?</h2>
+        <p>Return to the message that brought you here and tap the invitation link again.</p>
+        <p>If Gide still does not open, choose <b>Join a family</b> in the app and enter the code shown above.</p>
+      </div>
+    </section>
+
+    <aside class="join-assurance">
+      <h2>Before you continue</h2>
+      <ul>
+        <li><span>✓</span><div><b>Do not purchase another license</b><small>Your organizer's family license covers your membership.</small></div></li>
+        <li><span>✓</span><div><b>Use your own Google account</b><small>This identifies you and connects your private family access.</small></div></li>
+        <li><span>✓</span><div><b>Your family stays private</b><small>Only approved family members can access the shared archive.</small></div></li>
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>
