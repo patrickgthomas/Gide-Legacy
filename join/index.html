@@ -1,59 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Family invitation | Gide — Legacy</title>
-  <meta name="description" content="Join your private family archive on Gide — Legacy.">
-  <link rel="icon" type="image/png" href="../G-legacy.png">
-  <link rel="stylesheet" href="../styles.css">
+  <title>Family invitation | Gide Legacy</title>
+  <meta name="description" content="Join your private family archive on Gide Legacy. Joining an existing family is free.">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <meta name="theme-color" content="#0A2540">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+
+  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="stylesheet" href="../assets/css/join.css">
+
   <script src="join.js" defer></script>
 </head>
 <body class="join-page">
-  <header class="site-header shell">
-    <a class="brand" href="../" aria-label="Gide Legacy home">
-      <img src="../G-legacy.png" alt="" width="54" height="54">
-      <span>Gide <b>— Legacy</b></span>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">
+      <img src="../assets/logo.png" alt="" width="40" height="40" class="brand-mark">
+      <span class="brand-name">Gide Legacy</span>
     </a>
     <span class="secure-label">Private family invitation</span>
-  </header>
+  </div>
+</header>
 
-  <main class="join-shell">
-    <section class="invite-card">
-      <div class="invite-icon"><img src="../G-legacy.png" alt="" width="84" height="84"></div>
-      <p class="eyebrow centered">YOU'VE BEEN INVITED</p>
-      <h1>Join your family's private archive.</h1>
-      <p class="invite-lede">Your family has already created and paid for this group. Joining is free.</p>
+<main class="section">
+  <div class="wrap join-layout">
+
+    <section class="card invite-card">
+      <p class="eyebrow">You have been invited</p>
+      <h1>Join your family&rsquo;s private archive.</h1>
+      <p class="lede">
+        Your family has already created and paid for this group. Joining is free.
+      </p>
 
       <div class="code-box" aria-live="polite">
-        <span>Your invitation code</span>
-        <strong id="invite-code">Reading invitation…</strong>
-        <button id="copy-code" type="button" hidden>Copy code</button>
+        <span class="code-label">Your invitation code</span>
+        <strong id="invite-code">Reading invitation&hellip;</strong>
+        <button id="copy-code" class="btn btn-outline btn-sm" type="button" hidden>Copy code</button>
       </div>
 
-      <p id="key-confirmation" class="key-confirmation" hidden>✓ Your private family encryption key is included securely in this invitation.</p>
-      <div id="missing-code" class="missing-code" hidden>
+      <p id="key-confirmation" class="key-note" hidden>
+        Your private family encryption key is included securely in this invitation.
+      </p>
+
+      <div id="missing-code" class="missing-note" hidden>
         <b>This link does not contain an invitation code.</b>
         <span>Ask your family organizer to send a new, complete invitation link.</span>
       </div>
 
-      <a class="button primary full" href="https://play.google.com/store/apps/details?id=com.gidelegacy.app">Get or open Gide on Google Play</a>
+      <a class="btn btn-accent btn-block" href="https://play.google.com/store/apps/details?id=com.gidelegacy.app">
+        Get or open Gide Legacy on Google Play
+      </a>
 
       <div class="installed-help">
-        <h2>Already have Gide?</h2>
+        <h2>Already have Gide Legacy?</h2>
         <p>Return to the message that brought you here and tap the invitation link again.</p>
-        <p>If Gide still does not open, choose <b>Join a family</b> in the app and enter the code shown above.</p>
+        <p>If the app still does not open, choose <b>Join a family</b> inside it and enter the code shown above.</p>
       </div>
     </section>
 
-    <aside class="join-assurance">
+    <aside class="card join-assurance">
       <h2>Before you continue</h2>
-      <ul>
-        <li><span>✓</span><div><b>Do not purchase another license</b><small>Your organizer's family license covers your membership.</small></div></li>
-        <li><span>✓</span><div><b>Use your own Google account</b><small>This identifies you and connects your private family access.</small></div></li>
-        <li><span>✓</span><div><b>Your family stays private</b><small>Only approved family members can access the shared archive.</small></div></li>
+      <ul class="feature-list">
+        <li>
+          <b>Do not purchase another license</b>
+          <span>Your organizer&rsquo;s family license covers your membership.</span>
+        </li>
+        <li>
+          <b>Use your own Google account</b>
+          <span>This identifies you and connects your private family access.</span>
+        </li>
+        <li>
+          <b>Your family stays private</b>
+          <span>Only approved family members can access the shared archive.</span>
+        </li>
       </ul>
     </aside>
-  </main>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Gide. All rights reserved.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="https://gidehub.com/privacy.html">Privacy Policy</a>
+      <a href="https://gidehub.com/support.html">Support</a>
+      <a href="https://gidehub.com/">gidehub.com</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
