@@ -5,15 +5,19 @@ Public landing and invitation-onboarding site for
 
 ## Routes
 
-- `/` explains Gide Legacy and links to the Android app.
-- `/join/?code=ABCD-1234#key=...` provides the fallback invitation experience
-  when the app is not installed. The private family key stays in the URL
-  fragment and is processed only in the visitor's browser.
+- `/` explains Gide Legacy and links to the app stores.
+- `/join?code=ABCD-1234` provides the fallback invitation experience
+  when the app is not installed. Current invitations carry a code, not an encryption key.
 - `/.well-known/assetlinks.json` lets Android verify that invitation links for
   this domain belong to `com.gidelegacy.app`.
 
 Deployed through GitHub Pages from the `main` branch; the `CNAME` file keeps the
 custom domain connected.
+
+- `/.well-known/apple-app-site-association` declares the iPhone association for
+  `6BA793H479.com.gidelegacy.app`, limited to the app's `/join` route.
+  Deploying this file is not proof of working universal links: verify the live
+  response, Apple association processing, and an invitation tap on a real iPhone.
 
 ## What is generated vs. hand-maintained
 
@@ -23,3 +27,4 @@ repo, then run `node tools/build-app-sites.mjs`.
 
 `join/index.html`, `join/join.js`, `assets/css/join.css` and `.well-known/` are
 hand-maintained here and are never touched by the generator.
+
